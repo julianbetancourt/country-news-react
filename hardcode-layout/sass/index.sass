@@ -1,2 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300)
+
+/*General ***********
+*
+  box-sizing: border-box
+
 body
-  background: steelblue
+  font-family: 'Open Sans'
+
+img
+  max-width: 100%
+
+.container
+  width: 800px
+  margin: 0 auto
+
+.active
+  font-weight: 700
+
+nav
+  display: flex
+  justify-content: space-between
+  padding: 20px 180px
+  text-transform: uppercase
+  //border-bottom: 1px solid
+  color: rgb(11, 57, 110)
+  a
+    text-decoration: none
+    color: inherit
+  .logo
+    h1
+      margin: 0 0 0px 0
+      font-weight: 300
+      span
+        font-weight: 700
+    .top
+      text-transform: capitalize
+  ul
+    list-style: none
+    padding: 0
+    display: flex
+
+    li
+      margin-right: 45px
+
+.day
+  text-align: center
+  font-weight: 700
+
+.news
+  padding-top: 50px
+.news-item
+  width: 100%
+  display: flex
+  min-height: 400px
+  margin-bottom: 30px
+  border-radius: 3px
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75)
+
+  .photo
+    width: 50%
+    background: linear-gradient(rgba(20, 116, 215, 0.53), rgba(20, 116, 215, 0.53)), url('https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447') no-repeat center
+    background-size: cover
+    color: white
+    text-transform: uppercase
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 50px
+    font-weight: 700
+    padding: 50px
+
+  .content
+    width: 50%
+    padding: 20px
+  .content-container
+    display: flex
+    flex-direction: column
+    .city
+      display: flex
+      justify-content: flex-end
+      span
+        color: #919191
+    .news-item--new
+      padding-top: 90px
+      .subtitle
+        display: block
+        font-weight: 700
+        font-size: 20px
+        text-transform: uppercase
+        margin-bottom: 10px
+      .new
+        line-height: 1.6
+
+.photos
+  display: flex
+  flex-wrap: wrap
+  padding-top: 50px
+  justify-content: space-around
+  .photo
+    width: 45%
+    margin-bottom: 40px
+    //&:nth-child(odd)
